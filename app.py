@@ -107,13 +107,12 @@ def eulerian_magnification(frames, fps, levels, alpha, f_lo, f_hi, chroma_atten)
 # STREAMLIT UI
 # =========================
 st.set_page_config(layout="wide")
-st.title("Eulerian Video Magnification (MIT CSAIL – Correct Gaussian EVM)")
+st.title("Eulerian Video Magnification (MIT CSAIL)")
 
 st.markdown("""
-**Exact Gaussian Eulerian Video Magnification pipeline**  
+**Gaussian Eulerian Video Magnification pipeline**  
 Spatial Gaussian pyramid → Temporal bandpass → Amplification → Reconstruction
 
-No ML. No classification. Visualization only.
 """)
 
 uploaded = st.file_uploader("Upload a video (.mp4)", type=["mp4"])
